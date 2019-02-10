@@ -1,0 +1,538 @@
+Questions
+
+1. Run the commands sort, wc and uniq on the commands.js file. Explain how they work and what the output was.
+
+=> sort command
+
+Output:
+
+
+
+
+
+
+          
+              return ;
+              wordArray.push(word);
+            if(word === ''){
+            }
+            } else {
+          let wordSplit = line.split(' ').forEach(word => {
+          return ;
+          });
+        if(line === ''){
+        if(lineArray[i] === lineArray[i+1]){
+        let wordArray = [];
+        resultArray.push(lineArray[i]);
+        resultArray.unshift(lineArray[i]);
+        return ;
+        test = fullPath[i].split('');
+        test = fullPath[i].split('');
+        wordCount += wordArray.length;
+        }
+        }
+        } else {
+        } else {
+      console.log(fullPath);
+      console.log(fullPath);
+      console.log(test);
+      console.log(test);
+      done(data);
+      done(result);
+      done(result);
+      done(result);
+      done(result);
+      fileName = fullPath[0];
+      fileName = fullPath[0];
+      fileName = fullPath[fullPath.length - 1];
+      fileName = fullPath[fullPath.length - 1];
+      for(i=0; i < fullPathLength -1; i++){
+      for(i=0; i < fullPathLength -1; i++){
+      for(i=0; i < n; i++) {
+      for(i=0; i <= lineArray.length -1; i++){
+      for(i=n; i > 0; i--) {
+      if(err) throw err;
+      if(err) throw err;
+      if(err) throw err;
+      if(err) throw err;
+      if(err) throw err;
+      if(err) throw err;
+      let bitesCount = fs.lstatSync(fileName).size;
+      let decompose = lineArray.forEach(line => {
+      let lineArray = data.toString().split("\n");
+      let lineArray = data.toString().split("\n");
+      let lineArray = data.toString().split("\n");
+      let lineArray = data.toString().split("\n");
+      let lineCount = lineArray.length;
+      let result = data.toString().split("\n").sort().join("\n");
+      let result = lineCount + ' ' + wordCount + ' ' + bitesCount + ' ' + fileName;
+      let result = resultArray.join("\n");
+      let result = resultArray.join("\n");
+      let resultArray = [];
+      let resultArray = [];
+      let test;
+      let test;
+      let uniqArray = lineArray;
+      let wordCount = 0;
+      n = 10;
+      n = 10;
+      }
+      }
+      }
+      }
+      }
+      });
+    //we will add the functionality of echo next within the object commandLibrary
+    break;
+    break;
+    break;
+    break;
+    break;
+    break;
+    break;
+    break;
+    case "cat":
+    case "echo":
+    case "head":
+    case "sort":
+    case "tail":
+    case "uniq":
+    case "wc":
+    commandLibrary.cat(userInputArray.slice(1));
+    commandLibrary.echo(userInputArray.slice(1).join(" "));
+    commandLibrary.errorHandler(userInputArray[0]);
+    commandLibrary.head(userInputArray.slice(1));
+    commandLibrary.sort(userInputArray.slice(1));
+    commandLibrary.tail(userInputArray.slice(1));
+    commandLibrary.uniq(userInputArray.slice(1));
+    commandLibrary.wc(userInputArray.slice(1));
+    console.log(fileName);
+    console.log(fileName);
+    console.log(fullPath);
+    console.log(fullPath);
+    const fileName = fullPath[0];
+    const fileName = fullPath[0];
+    const fileName = fullPath[0];
+    const fileName = fullPath[0];
+    default:
+    done(result);
+    done(userInput);
+    fs.readFile(fileName, (err, data) => {
+    fs.readFile(fileName, (err, data) => {
+    fs.readFile(fileName, (err, data) => {
+    fs.readFile(fileName, (err, data) => {
+    fs.readFile(fileName, (err, data) => {
+    fs.readFile(fileName, (err, data) => {
+    if(fullPathLength === 1){
+    if(fullPathLength === 1){
+    let fileName;
+    let fileName;
+    let fullPathLength = fullPath.length;
+    let fullPathLength = fullPath.length;
+    let n;
+    let n;
+    let result = '-bash: '+ wrongCommand + ': command not found';
+    }
+    }
+    } else {
+    } else {
+    });
+    });
+    });
+    });
+    });
+    });
+  "cat": function(fullPath) {
+  "echo": function(userInput) {
+  "errorHandler": function(wrongCommand) {
+  "head": function(fullPath) {
+  "sort": function(fullPath) {
+  "tail": function(fullPath) {
+  "uniq": function(fullPath) {
+  "wc": function(fullPath) {
+  //errorHandler command
+  //parses the user input to understand which command was typed
+  //the cat command
+  //the echo command
+  //the head command
+  //the sort command
+  //the tail command
+  //the uniq command
+  //the wc command
+  const command = userInputArray[0];
+  const userInputArray = userInput.split(" ");
+  process.stdout.write('\nprompt > ');
+  process.stdout.write(output);
+  switch (command) {
+  }
+  }
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+//where we will store our commands
+//where we will store the logic of our commands
+//write out data
+const commandLibrary = {
+const fs = require('fs');
+function done(output) {
+function evaluateCmd(userInput) {
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+}
+}
+};
+
+Explanation:
+The `sort` command ordered each line of the files in alphabetical order
+
+=> wc command
+
+Output:
+
+     180     483    4730 commands.js
+
+Explanation:
+The `wc` command provides the number of lines, words, bites and name of the data analyzed
+
+=> uniq command
+
+Output:
+const fs = require('fs');
+
+//write out data
+function done(output) {
+  process.stdout.write(output);
+  process.stdout.write('\nprompt > ');
+}
+
+//where we will store our commands
+function evaluateCmd(userInput) {
+  //parses the user input to understand which command was typed
+  const userInputArray = userInput.split(" ");
+  const command = userInputArray[0];
+
+  switch (command) {
+    case "echo":
+    //we will add the functionality of echo next within the object commandLibrary
+    commandLibrary.echo(userInputArray.slice(1).join(" "));
+    break;
+    case "cat":
+    commandLibrary.cat(userInputArray.slice(1));
+    break;
+    case "sort":
+    commandLibrary.sort(userInputArray.slice(1));
+    break;
+    case "wc":
+    commandLibrary.wc(userInputArray.slice(1));
+    break;
+    case "uniq":
+    commandLibrary.uniq(userInputArray.slice(1));
+    break;
+    case "head":
+    commandLibrary.head(userInputArray.slice(1));
+    break;
+    case "tail":
+    commandLibrary.tail(userInputArray.slice(1));
+    break;
+    default:
+    commandLibrary.errorHandler(userInputArray[0]);
+    break;
+  }
+}
+
+//where we will store the logic of our commands
+const commandLibrary = {
+  //the echo command
+  "echo": function(userInput) {
+    done(userInput);
+  },
+  //the cat command
+  "cat": function(fullPath) {
+    const fileName = fullPath[0];
+    fs.readFile(fileName, (err, data) => {
+      if(err) throw err;
+      done(data);
+    });
+  },
+  //the sort command
+  "sort": function(fullPath) {
+    const fileName = fullPath[0];
+    fs.readFile(fileName, (err, data) => {
+      if(err) throw err;
+      let result = data.toString().split("\n").sort().join("\n");
+      done(result);
+    });
+  },
+  //the wc command
+  "wc": function(fullPath) {
+    const fileName = fullPath[0];
+    fs.readFile(fileName, (err, data) => {
+      if(err) throw err;
+      let lineArray = data.toString().split("\n");
+      let lineCount = lineArray.length;
+      let wordCount = 0;
+      let decompose = lineArray.forEach(line => {
+        let wordArray = [];
+        if(line === ''){
+          return ;
+        } else {
+          let wordSplit = line.split(' ').forEach(word => {
+            if(word === ''){
+              return ;
+            } else {
+              wordArray.push(word);
+            }
+          });
+        }
+        wordCount += wordArray.length;
+        return ;
+      });
+      let bitesCount = fs.lstatSync(fileName).size;
+      let result = lineCount + ' ' + wordCount + ' ' + bitesCount + ' ' + fileName;
+      done(result);
+    });
+  },
+  //the uniq command
+  "uniq": function(fullPath) {
+    const fileName = fullPath[0];
+    fs.readFile(fileName, (err, data) => {
+      if(err) throw err;
+      let lineArray = data.toString().split("\n");
+      let uniqArray = lineArray;
+      for(i=0; i <= lineArray.length -1; i++){
+        if(lineArray[i] === lineArray[i+1]){
+          
+        } else {
+
+        }
+      }
+    });
+  },
+  //the head command
+  "head": function(fullPath) {
+    let fileName;
+    let n;
+    let fullPathLength = fullPath.length;
+    if(fullPathLength === 1){
+      fileName = fullPath[0];
+      n = 10;
+    } else {
+      fileName = fullPath[fullPath.length - 1];
+      let test;
+      console.log(fullPath);
+      for(i=0; i < fullPathLength -1; i++){
+        test = fullPath[i].split('');
+      }
+      console.log(test);
+    }
+    console.log(fullPath);
+    console.log(fileName);
+    fs.readFile(fileName, (err, data) => {
+      if(err) throw err;
+      let lineArray = data.toString().split("\n");
+      let resultArray = [];
+      for(i=0; i < n; i++) {
+        resultArray.push(lineArray[i]);
+      }
+      let result = resultArray.join("\n");
+      done(result);
+    });
+  },
+  //the tail command
+  "tail": function(fullPath) {
+    let fileName;
+    let n;
+    let fullPathLength = fullPath.length;
+    if(fullPathLength === 1){
+      fileName = fullPath[0];
+      n = 10;
+    } else {
+      fileName = fullPath[fullPath.length - 1];
+      let test;
+      console.log(fullPath);
+      for(i=0; i < fullPathLength -1; i++){
+        test = fullPath[i].split('');
+      }
+      console.log(test);
+    }
+    console.log(fullPath);
+    console.log(fileName);
+    fs.readFile(fileName, (err, data) => {
+      if(err) throw err;
+      let lineArray = data.toString().split("\n");
+      let resultArray = [];
+      for(i=n; i > 0; i--) {
+        resultArray.unshift(lineArray[i]);
+      }
+      let result = resultArray.join("\n");
+      done(result);
+    });
+  },
+  //errorHandler command
+  "errorHandler": function(wrongCommand) {
+    let result = '-bash: '+ wrongCommand + ': command not found';
+    done(result);
+  }
+};
+
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+
+Explanation:
+
+The `uniq` command compares adjacent data points, in this case adjacent lines of code, and removes the duplicates before returning the data points. This means that if 2 or more adjacent data points are identical only 1 will be returned. 
+
+Example: uniq [a,a,a,b,c] would return [a,b,c]
+
+However, if the duplicates are not next to each other `uniq` will not consider them duplicates.
+
+Example: uniq [a,a,b,c,a] would return [a,b,c,a]
+
+2. Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the output was and why the specific data was outputted.
+
+=> command sort commands.js | uniq
+
+Output:
+
+          
+              return ;
+              wordArray.push(word);
+            if(word === ''){
+            }
+            } else {
+          let wordSplit = line.split(' ').forEach(word => {
+          return ;
+          });
+        if(line === ''){
+        if(lineArray[i] === lineArray[i+1]){
+        let wordArray = [];
+        resultArray.push(lineArray[i]);
+        resultArray.unshift(lineArray[i]);
+        return ;
+        test = fullPath[i].split('');
+        wordCount += wordArray.length;
+        }
+        } else {
+      console.log(fullPath);
+      console.log(test);
+      done(data);
+      done(result);
+      fileName = fullPath[0];
+      fileName = fullPath[fullPath.length - 1];
+      for(i=0; i < fullPathLength -1; i++){
+      for(i=0; i < n; i++) {
+      for(i=0; i <= lineArray.length -1; i++){
+      for(i=n; i > 0; i--) {
+      if(err) throw err;
+      let bitesCount = fs.lstatSync(fileName).size;
+      let decompose = lineArray.forEach(line => {
+      let lineArray = data.toString().split("\n");
+      let lineCount = lineArray.length;
+      let result = data.toString().split("\n").sort().join("\n");
+      let result = lineCount + ' ' + wordCount + ' ' + bitesCount + ' ' + fileName;
+      let result = resultArray.join("\n");
+      let resultArray = [];
+      let test;
+      let uniqArray = lineArray;
+      let wordCount = 0;
+      n = 10;
+      }
+      });
+    //we will add the functionality of echo next within the object commandLibrary
+    break;
+    case "cat":
+    case "echo":
+    case "head":
+    case "sort":
+    case "tail":
+    case "uniq":
+    case "wc":
+    commandLibrary.cat(userInputArray.slice(1));
+    commandLibrary.echo(userInputArray.slice(1).join(" "));
+    commandLibrary.errorHandler(userInputArray[0]);
+    commandLibrary.head(userInputArray.slice(1));
+    commandLibrary.sort(userInputArray.slice(1));
+    commandLibrary.tail(userInputArray.slice(1));
+    commandLibrary.uniq(userInputArray.slice(1));
+    commandLibrary.wc(userInputArray.slice(1));
+    console.log(fileName);
+    console.log(fullPath);
+    const fileName = fullPath[0];
+    default:
+    done(result);
+    done(userInput);
+    fs.readFile(fileName, (err, data) => {
+    if(fullPathLength === 1){
+    let fileName;
+    let fullPathLength = fullPath.length;
+    let n;
+    let result = '-bash: '+ wrongCommand + ': command not found';
+    }
+    } else {
+    });
+  "cat": function(fullPath) {
+  "echo": function(userInput) {
+  "errorHandler": function(wrongCommand) {
+  "head": function(fullPath) {
+  "sort": function(fullPath) {
+  "tail": function(fullPath) {
+  "uniq": function(fullPath) {
+  "wc": function(fullPath) {
+  //errorHandler command
+  //parses the user input to understand which command was typed
+  //the cat command
+  //the echo command
+  //the head command
+  //the sort command
+  //the tail command
+  //the uniq command
+  //the wc command
+  const command = userInputArray[0];
+  const userInputArray = userInput.split(" ");
+  process.stdout.write('\nprompt > ');
+  process.stdout.write(output);
+  switch (command) {
+  }
+  },
+//where we will store our commands
+//where we will store the logic of our commands
+//write out data
+const commandLibrary = {
+const fs = require('fs');
+function done(output) {
+function evaluateCmd(userInput) {
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+}
+};
+
+Explanation:
+We first sorted the commands.js file then we passed (piped) the output of that command to the uniq command which removes adjacent duplicates.
+
+Therefore, by sorting alphabetically first, we made sure that all duplicates would be next to each other and then remove them with the uniq command.
+
+---------------------
+Programming Challenge
+
+Reverse String
+
+Given a string, reverse the order of characters in each word within a sentence while maintaining the original word order and whitespace and return the string. To improve your problem-solving experience, use the suggested functions to solve the problem.
+
+Answer:
+function reverseString(inputString) {
+ let originalArray = inputString.split(' ');
+ let reversedArray = [];
+ let reversal = originalArray.forEach(e => {
+   let tmp = e.split('');
+   let joined = tmp.reverse().join('');
+   reversedArray.push(joined);
+ });
+ let reversedString = reversedArray.join(' ');
+ return reversedString;
+}
+
+reverseString("I'm learning to program algorithms!");
