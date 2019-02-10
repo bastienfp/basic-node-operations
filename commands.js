@@ -93,22 +93,22 @@ const commandLibrary = {
       done(result);
     });
   },
-  //the uniq command
-  // "uniq": function(fullPath) {
-  //   const fileName = fullPath[0];
-  //   fs.readFile(fileName, (err, data) => {
-  //     if(err) throw err;
-  //     let lineArray = data.toString().split("\n");
-  //     let uniqArray = lineArray;
-  //     for(i=0; i <= lineArray.length -1; i++){
-  //       if(lineArray[i] === lineArray[i+1]){
-  //
-  //       } else {
-  //
-  //       }
-  //     }
-  //   });
-  // },
+  // the uniq command
+  "uniq": function(fullPath) {
+    const fileName = fullPath[0];
+    fs.readFile(fileName, (err, data) => {
+      if(err) throw err;
+      let lineArray = data.toString().split("\n");
+      let uniqArray = [];
+      for(i=0; i <= lineArray.length -1; i++){
+        if(lineArray[i] !== lineArray[i+1]){
+          uniqArray.push(lineArray[i]);
+        }
+      }
+      let result = uniqArray.join("\n");
+      done(result);
+    });
+  },
   //the head command
   "head": function(fullPath) {
     let fileName;
